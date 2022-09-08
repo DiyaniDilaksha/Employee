@@ -1,0 +1,49 @@
+
+.logo img{
+
+width: 200px;
+padding: 2.5rem;
+align-items: center;
+}
+
+.mat-icon{
+    vertical-align: center;
+    margin-right: 1rem;
+}
+
+.mat-divider{
+    border-top-width: 2px;
+    border-color: white;
+}
+
+.mat-list-item{
+    color: #628c9d;
+    font-size:15px;
+    height: 44px;
+    margin-bottom: 4px;
+  
+  
+}
+
+.mat-list-item :hover{
+    background: #2c3344;
+}
+
+.mat-list-item ::ng-deep .mat-list-item-content {
+    border-radius: 5px;
+    margin: 0 8px;
+}
+.mat-list-item ::ng-deep .mat-list-item-content:hover{
+    background: #2c3344;
+}
+
+.list-item-active{
+    color: #f2f5f7;
+}
+.list-item-active ::ng-deep .mat-list-item-content{
+    background: #2c3344;
+}
+
+.list-item-active ::ng-deep .mat-list-item-content:hover{
+    background: #2c3344;
+}

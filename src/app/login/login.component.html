@@ -1,0 +1,61 @@
+<div class="content" style="background-color: #f2f2f2;height: 100%;">
+    <form fxLayout="column" [formGroup]="registerForm">
+      <div fxLayout="row" fxLayoutAlign="space-between start">
+        <div style="background-color: rgb(221, 147, 78);width: 100%;">
+            <p
+              style="
+                font-size: 30px;
+                font-weight: bold;
+                margin-top: 50px;
+                margin-left: 100px;">
+              Employee System
+            </p>
+          </div>
+      </div>
+
+      <div fxLayout="row" fxLayoutAlign="space-between start" style="margin-top: 50px;">
+        <div fxLayout="column">
+            <img src="/assets/log.jpg" style="width: 700px;height: 500px;margin-right: 30px;margin-left: 50px;">
+        </div>
+        <div fxLayout="column">
+        <mat-card style="margin-left: 50px; margin-right: 50px;background-color: white;" >        
+            <mat-card-content>
+              <div fxLayout="row" fxLayoutAlign="space-between start" style="margin-top: 50px;">   
+                <div fxLayout="column" fxLayoutAlign="space-between start">
+                  <div fxLayout="row" fxLayoutAlign="space-between start">   
+                    <label style="margin-right: 50px;margin-left: 50px;">User Name</label>
+                    <mat-form-field appearance="outline" style="margin-right: 50px;">
+                      <input matInput class="cell" formControlName="userName" />
+                    </mat-form-field>
+                  </div>
+
+                  <div fxLayout="row" fxLayoutAlign="space-between start" style="margin-top: 20px;">   
+                    <label style="margin-right: 60px;margin-left: 50px;">Password</label>
+                    <mat-form-field appearance="outline" style="margin-right: 50px;">
+                      <input matInput type="password" class="cell" formControlName="password" />
+                    </mat-form-field>
+                  </div>
+
+                  <div fxLayout="row" fxLayoutAlign="space-between start" style="margin-top: 20px;">   
+                    <label style="margin-right: 90px;margin-left: 50px;">Email</label>
+                    <mat-form-field appearance="outline" style="margin-right: 50px;">
+                      <input matInput class="cell" type="email" formControlName="email" />
+                    </mat-form-field>
+                  </div>
+
+                  <div fxLayout="row" fxLayoutAlign="space-between start" style="margin-bottom: 30px;margin-top: 30px;">   
+                    
+                    <button mat-button type="button" (click)="addata()">Register</button>
+
+                    <button mat-button type="button" (click)="gonextpage()">Next</button>
+                  </div>
+                </div>
+            </div>
+            </mat-card-content>
+        </mat-card>
+        </div>
+      
+      </div>
+    </form>
+   
+</div>
